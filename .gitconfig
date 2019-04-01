@@ -1,5 +1,14 @@
 [alias]
 
+    # Usual aliases
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    mr = merge
+    rb = rebase
+
+
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
@@ -86,6 +95,11 @@
 
 [core]
 
+    editor = vim
+    autocrlf = false
+    symlinks = true
+    filemode = false
+
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
@@ -154,6 +168,8 @@
 
 [merge]
 
+    ff = false
+
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 
@@ -185,3 +201,7 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+    email = philippe.mouchel@gmail.com
+    name = Philippe MOUCHEL

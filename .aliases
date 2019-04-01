@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Usual aliases
+alias ll='ls -alF'
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
