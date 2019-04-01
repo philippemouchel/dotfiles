@@ -12,3 +12,6 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# PHP Storm config files
+.idea/
