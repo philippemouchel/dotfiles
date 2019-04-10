@@ -8,6 +8,11 @@
     mr = merge
     rb = rebase
 
+	# Fetch upstream & checkout upstream/master branch
+	cou = !"git fetch upstream; git checkout upstream/master"
+
+	# Fetch upstream & checkout upstream/master branch
+	mru = !"git fetch upstream; git merge upstream/master"
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
